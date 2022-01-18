@@ -13,20 +13,33 @@ struct RecipeListView: View {
     
     var body: some View {
         NavigationView {
-            List(model.recipies) { r in
+            VStack(alignment: .leading){
+                Text("All Recipes")
+                    .bold()
+                    .padding(.top, 40)
+                    .font(.largeTitle)
                 
-                NavigationLink(destination: RecipeDetailView(recipe: r), label: {
-                    HStack(spacing: 20.0){
-                        Image(r.image)
-                            .resizable()
-                            .scaledToFill()
-                            .frame(width: 50, height: 50, alignment: .center)
-                            .clipped()
-                            .cornerRadius(5)
-                        Text(r.name)
+                ScrollView {
+                    LazyVStack (alignment: .leading){
+                        ForEach(model.recipies) { r in
+                            NavigationLink(destination: RecipeDetailView(recipe: r), label: {
+                                HStack(spacing: 20.0){
+                                    Image(r.image)
+                                        .resizable()
+                                        .scaledToFill()
+                                        .frame(width: 50, height: 50, alignment: .center)
+                                        .clipped()
+                                        .cornerRadius(5)
+                                    Text(r.name)
+                                        .foregroundColor(.black)
+                                }
+                            })
+                        }
                     }
-                })
-            }.navigationTitle("All Recipes")
+                }
+            }
+            .navigationBarHidden(true)
+            .padding(.leading)
         }
     }
 }
@@ -34,5 +47,6 @@ struct RecipeListView: View {
 struct RecipeListView_Previews: PreviewProvider {
     static var previews: some View {
         RecipeListView()
+            .environmentObject(RecipeModel())
     }
 }
