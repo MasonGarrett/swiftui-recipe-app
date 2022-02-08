@@ -10,6 +10,8 @@
 		4321E37327936B0300E1A4C8 /* RecipeTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4321E37227936B0300E1A4C8 /* RecipeTabView.swift */; };
 		4321E3752796172C00E1A4C8 /* Ingredient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4321E3742796172C00E1A4C8 /* Ingredient.swift */; };
 		4321E37727961A4300E1A4C8 /* RecipeFeaturedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4321E37627961A4300E1A4C8 /* RecipeFeaturedView.swift */; };
+		43686F7A27B2CB50002F11A8 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43686F7927B2CB50002F11A8 /* Constants.swift */; };
+		43686F7C27B2CBCC002F11A8 /* RecipeCategoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43686F7B27B2CBCC002F11A8 /* RecipeCategoryView.swift */; };
 		4391AE0D278F8031006B281B /* RecipeListApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4391AE0C278F8031006B281B /* RecipeListApp.swift */; };
 		4391AE0F278F8031006B281B /* RecipeListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4391AE0E278F8031006B281B /* RecipeListView.swift */; };
 		4391AE11278F8034006B281B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4391AE10278F8034006B281B /* Assets.xcassets */; };
@@ -27,6 +29,8 @@
 		4321E37227936B0300E1A4C8 /* RecipeTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeTabView.swift; sourceTree = "<group>"; };
 		4321E3742796172C00E1A4C8 /* Ingredient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ingredient.swift; sourceTree = "<group>"; };
 		4321E37627961A4300E1A4C8 /* RecipeFeaturedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeFeaturedView.swift; sourceTree = "<group>"; };
+		43686F7927B2CB50002F11A8 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		43686F7B27B2CBCC002F11A8 /* RecipeCategoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeCategoryView.swift; sourceTree = "<group>"; };
 		4391AE09278F8031006B281B /* RecipeList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RecipeList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4391AE0C278F8031006B281B /* RecipeListApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeListApp.swift; sourceTree = "<group>"; };
 		4391AE0E278F8031006B281B /* RecipeListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeListView.swift; sourceTree = "<group>"; };
@@ -117,6 +121,7 @@
 				4321E37227936B0300E1A4C8 /* RecipeTabView.swift */,
 				4321E37627961A4300E1A4C8 /* RecipeFeaturedView.swift */,
 				43D0B98D2799E58E00235582 /* RecipeHighlightsView.swift */,
+				43686F7B27B2CBCC002F11A8 /* RecipeCategoryView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -141,6 +146,7 @@
 			isa = PBXGroup;
 			children = (
 				43D64F192799D58A006F6930 /* Rational.swift */,
+				43686F7927B2CB50002F11A8 /* Constants.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -218,6 +224,7 @@
 			files = (
 				4391AE22278F81C9006B281B /* Recipe.swift in Sources */,
 				4391AE28278F9DD0006B281B /* RecipeDetailView.swift in Sources */,
+				43686F7C27B2CBCC002F11A8 /* RecipeCategoryView.swift in Sources */,
 				4391AE24278F8329006B281B /* RecipeModel.swift in Sources */,
 				4391AE0F278F8031006B281B /* RecipeListView.swift in Sources */,
 				4321E3752796172C00E1A4C8 /* Ingredient.swift in Sources */,
@@ -227,6 +234,7 @@
 				43D64F1A2799D58A006F6930 /* Rational.swift in Sources */,
 				4391AE26278F858A006B281B /* DataService.swift in Sources */,
 				4321E37327936B0300E1A4C8 /* RecipeTabView.swift in Sources */,
+				43686F7A27B2CB50002F11A8 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -357,6 +365,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"RecipeList/Preview Content\"";
+				DEVELOPMENT_TEAM = 6DNY3CMBDZ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -385,6 +394,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"RecipeList/Preview Content\"";
+				DEVELOPMENT_TEAM = 6DNY3CMBDZ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
